@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>jQuery dynamicTimezones Plugin Demo</title>
+
+<style type="text/css" media="screen">
+	body {
+		font-family:Helvetica, Arial, sans-serif;
+		line-height:24px;
+		font-size:14px;
+		width:800px;
+	}
+	pre code, span.code {
+		background:#ccc;
+		padding:3px;
+		font-family:monospace;
+	}
+</style>
+
+<script type="text/javascript" src="jquery-1.4.2.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="phpjs.date.js" charset="utf-8"></script>
+<script type="text/javascript" src="jquery.dynamicTimezones.js" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+	$('.dtz').dynamicTimezones("g:i");
+});
+</script>
+
+</head>
+
+<body>
+
+<h1>jQuery dynamicTimezones Plugin Demo</h1>
+
+<p>The content beneath the line is formed using the following HTML:</p>
+<pre><code>&lt;p&gt;&lt;span class=&quot;dtz 1278630213&quot;&gt;7:03 EST&lt;/span&gt;&lt;/p&gt;</code></pre>
+<p>If you have JavaScript enabled, you should see the time shown in your own timezone.</p>
+<p>For more information on how this works, view the source code of this page or view the <a href="README.html">README</a>.</p>
+<hr />
+
+<p class="dtz 1278630213">7:03 EST</p>
+
+</body>
+</html>
